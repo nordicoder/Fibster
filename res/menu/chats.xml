@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.javapapers.android.Chats" >
+
+
+ <item android:id="@+id/group"
+  android:icon="@drawable/social1"
+  android:title="My Action"
+  android:showAsAction="ifRoom|collapseActionView"
+  android:actionLayout="@layout/group" />
+
+
+   <item android:id="@+id/add"
+          android:icon="@drawable/ic_action_new"
+          android:title=""
+          android:showAsAction="always" />
+   
+ <!-- Help -->
+    <item android:id="@+id/action_help"
+     
+          android:title="Help"
+          android:showAsAction="never"/>
+     
+    <!-- Check updates -->
+    <item android:id="@+id/action_check_updates"
+          
+          android:title="Updates"
+          android:showAsAction="never" />
+ 
+          
+          
+           
+          
+          <!-- Search Widget 
+<item android:id="@+id/action_search"
+  android:icon="@drawable/ic_action_search"
+  android:title="Search"
+  android:showAsAction="ifRoom|collapseActionView"
+  android:actionViewClass="android.widget.SearchView" />
+  -->
+    
+   
+    
+
+</menu>

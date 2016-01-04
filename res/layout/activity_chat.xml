@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bob"
+    android:orientation="vertical" >
+
+  
+    
+   <android.support.v4.widget.DrawerLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/drawer_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_toLeftOf="@+id/send" >
+
+    <!-- The main content view -->
+          <FrameLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+          </FrameLayout>
+
+    <!-- The navigation drawer list --> 
+         <ListView
+             android:id="@+id/slider_list"
+             android:layout_width="240dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="start"
+             android:background="#000000"
+             android:choiceMode="singleChoice"
+             android:divider="@android:color/transparent"
+             android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>
+      <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+           <EditText
+               android:id="@+id/chatText"
+               android:layout_width="match_parent"
+               android:layout_height="49dp"
+               android:layout_alignParentStart="true"
+               android:background="#99000000"
+               android:ems="10"
+               android:inputType="textMultiLine"
+               android:textColor="#ffffff" >
+               
+           </EditText>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/send1" />
+
+</RelativeLayout>
